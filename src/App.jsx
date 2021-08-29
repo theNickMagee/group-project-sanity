@@ -1,6 +1,6 @@
 import './App.css';
 import PersonCards from './PersonCards';
-import AssignedWork from './AssignedWork';
+import AssignedWorks from './AssignedWorks';
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
             </div>
         </div>
         
-        <div className="assigned-work">
-            <AssignedWork />
-        </div>
+          <div>
+            <AssignedWorks />
+            </div>
     </div>
   );
 }

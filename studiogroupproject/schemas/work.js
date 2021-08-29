@@ -9,14 +9,6 @@ export default {
         type: 'string',
       },
       {
-        name: 'image',
-        title: 'Image',
-        type: 'image',
-        options: {
-          hotspot: true,
-        },
-      },
-      {
         name: 'slug',
         title: 'Slug',
         type: 'slug',
@@ -25,7 +17,16 @@ export default {
           maxLength: 96,
         },
       },
+      {
+        name: 'image',
+        title: 'Image',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
     ],
+    
     preview: {
       select: {
         title: 'name',

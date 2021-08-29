@@ -10,6 +10,8 @@ const PersonCards = (props) => {
           .fetch(
             `*[_type == "member"]{
             name,
+            email,
+            major,
             slug,
             image{
                 asset->{
@@ -19,8 +21,8 @@ const PersonCards = (props) => {
             }
         }`
           )
-          .then((data) => {setMembers(data); console.log("hello")})
-          .catch(console.log("error fetching"));
+          .then((data) => {setMembers(data); console.log("members set")})
+          .catch(console.log("error fetching members"));
       }, []);
 
     return(
@@ -43,10 +45,10 @@ const PersonCard = ({ person }) => {
         <div className="person-card">
             <img src={person.image.asset.url}  className="person-card__pfp"/>
               <div className="person-card__text">
-                  <h3 className="person-card__text--name">Nick Magee</h3>
+                  <h3 className="person-card__text--name">{person.name}</h3>
 
-                  <h4 className="person-card__text--details">Software Engineering Major</h4>
-                  <h4 className="person-card__text--details">ncm200001@utdallas.edu</h4>
+                  <h4 className="person-card__text--details">{person.major} Major</h4>
+                  <h4 className="person-card__text--details">{person.email}</h4>
              </div>
         </div>
     );
