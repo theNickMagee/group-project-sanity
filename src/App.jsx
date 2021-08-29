@@ -1,5 +1,5 @@
 import './App.css';
-import PersonCard from './PersonCard';
+import PersonCards from './PersonCards';
 import AssignedWork from './AssignedWork';
 
 function App() {
@@ -16,11 +16,7 @@ function App() {
       <div className="member-content">
             <h2 className="member-content__title">Group Members</h2>
             <div className="member-content__members">
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
+                <PersonCards />
             </div>
         </div>
         
