@@ -43,7 +43,7 @@ const PersonCard = ({ person }) => {
 
     return (
         <div className="person-card">
-            <img src={person.image.asset.url}  className="person-card__pfp"/>
+            <img src={person.image.asset.url} alt={"member"} className="person-card__pfp"/>
               <div className="person-card__text">
                   <h3 className="person-card__text--name">{person.name}</h3>
 

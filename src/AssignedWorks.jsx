@@ -28,7 +28,7 @@ const AssignedWorks = (props) => {
         { 
         postData && postData.map((work, index) => {
             return(
-             <AssignedWork work={work} key={index}/>
+             <AssignedWork work={work} key={index} />
             )
         })
          }
@@ -43,7 +43,7 @@ const AssignedWork = ({work}) => {
         <div className="assigned-work">
             
             <h2 className="assigned-work__title">{work.name}</h2>
-            <img src={work.image.asset.url} className="assigned-work__img"/>
+            <img src={work.image.asset.url} className="assigned-work__img" alt={"Assigned Work"}/>
         </div>
     );
 }
