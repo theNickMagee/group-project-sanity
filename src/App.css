@@ -34,6 +34,13 @@ body {
     box-sizing: border-box;
 }
 
+@media (max-width: 978px) {
+    body{
+        padding:0;
+    }
+}
+
+
 .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom, #f5b96cb7,  #d15e11ab),  url(img/header-bg.jpg);
