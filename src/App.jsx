@@ -53,7 +53,8 @@ function App() {
       </div> */}
       <div className="assigned-works-title">Assigned Works</div>
       <div>
-        <AssignedWorksV2 />
+        {/* <AssignedWorksV2 /> */}
+        <AssignedWorks />
       </div>
     </div>
   );
