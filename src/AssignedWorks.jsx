@@ -53,6 +53,7 @@ const AssignedWork = ({ work }) => {
             href={`${work.file.asset.url}`}
             target="_blank"
             style={{ textDecoration: "none" }}
+            rel="noreferrer"
           >
             <button className="assigned-work__download-button">
               Download{" "}

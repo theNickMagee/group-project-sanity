@@ -3,7 +3,6 @@ import sanityClient from "./client";
 import "./App.css";
 import PersonCards from "./PersonCards";
 import AssignedWorks from "./AssignedWorks";
-import AssignedWorksV2 from "./AssignedWorksV2";
 
 function App() {
   const [postData, setPost] = useState(null);
